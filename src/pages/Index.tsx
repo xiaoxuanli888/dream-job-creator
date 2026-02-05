@@ -4,22 +4,18 @@ import JobTypeSelector from "@/components/JobTypeSelector";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Sparkles, FileText, Zap } from "lucide-react";
-
 const Index = () => {
   const [cvFile, setCvFile] = useState<File | null>(null);
   const [jobType, setJobType] = useState<"corporate" | "startup" | "open" | null>(null);
   const [jobDescription, setJobDescription] = useState("");
-
   const handleGenerate = () => {
     console.log("Generating CV and Cover Letter...", {
       cvFile,
       jobType,
-      jobDescription,
+      jobDescription
     });
   };
-
-  return (
-    <div className="min-h-screen bg-background flex flex-col">
+  return <div className="min-h-screen bg-background flex flex-col">
       <Header />
 
       {/* Hero Section */}
@@ -98,23 +94,13 @@ const Index = () => {
                     <FileText className="w-4 h-4" />
                     Step 3
                   </div>
-                  <p className="text-lg text-foreground mb-4 font-medium">
-                    Paste the job description
-                  </p>
-                  <textarea
-                    value={jobDescription}
-                    onChange={(e) => setJobDescription(e.target.value)}
-                    placeholder="Copy and paste the full job description here..."
-                    className="w-full h-48 p-6 border-2 border-foreground/10 rounded-2xl bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-foreground/30 transition-colors resize-none text-sm leading-relaxed"
-                  />
+                  <p className="text-lg text-foreground mb-4 font-medium">Paste the job description. Please include the role and the company name.</p>
+                  <textarea value={jobDescription} onChange={e => setJobDescription(e.target.value)} placeholder="Copy and paste the full job description here..." className="w-full h-48 p-6 border-2 border-foreground/10 rounded-2xl bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-foreground/30 transition-colors resize-none text-sm leading-relaxed" />
                 </div>
 
                 {/* Generate Button */}
                 <div className="flex justify-center pt-4">
-                  <button
-                    onClick={handleGenerate}
-                    className="group relative px-12 py-5 bg-foreground text-background rounded-full font-semibold text-lg hover:scale-105 transition-all duration-300 shadow-xl shadow-foreground/20"
-                  >
+                  <button onClick={handleGenerate} className="group relative px-12 py-5 bg-foreground text-background rounded-full font-semibold text-lg hover:scale-105 transition-all duration-300 shadow-xl shadow-foreground/20">
                     <span className="relative z-10 flex items-center gap-3">
                       <Sparkles className="w-5 h-5" />
                       Generate your CV and Cover Letter
@@ -151,8 +137,6 @@ const Index = () => {
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
