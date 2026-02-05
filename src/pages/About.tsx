@@ -1,10 +1,8 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Heart, Users, TrendingUp, Clock, Sparkles } from "lucide-react";
-
 const About = () => {
-  return (
-    <div className="min-h-screen bg-background flex flex-col">
+  return <div className="min-h-screen bg-background flex flex-col">
       <Header />
 
       <main className="flex-1 pt-20 md:pt-24">
@@ -45,7 +43,7 @@ const About = () => {
                   compelling, and every application feels like starting from scratch.
                 </p>
                 <p className="mb-6">
-                  The average job seeker spends <span className="text-foreground font-semibold">3-4 hours</span> customizing 
+                  The average job seeker spends <span className="text-foreground font-semibold">1-3 hours</span> customizing 
                   their application materials for a single position. Multiply that by dozens 
                   of applications, and you're looking at weeks of painstaking work—time that 
                   could be spent preparing for interviews or developing new skills.
@@ -74,7 +72,7 @@ const About = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-8">
                 <div className="bg-background border-2 border-foreground/10 rounded-2xl p-8 text-center">
                   <Users className="w-10 h-10 mx-auto text-foreground mb-4" />
-                  <p className="text-4xl font-bold text-foreground mb-2">50,000+</p>
+                  <p className="text-4xl font-bold text-foreground mb-2">1,000+</p>
                   <p className="text-sm text-muted-foreground">Job Seekers Helped</p>
                 </div>
                 <div className="bg-background border-2 border-foreground/10 rounded-2xl p-8 text-center">
@@ -84,7 +82,7 @@ const About = () => {
                 </div>
                 <div className="bg-background border-2 border-foreground/10 rounded-2xl p-8 text-center">
                   <Clock className="w-10 h-10 mx-auto text-foreground mb-4" />
-                  <p className="text-4xl font-bold text-foreground mb-2">120,000+</p>
+                  <p className="text-4xl font-bold text-foreground mb-2">12,000+</p>
                   <p className="text-sm text-muted-foreground">Hours Saved</p>
                 </div>
               </div>
@@ -105,10 +103,7 @@ const About = () => {
                 <p className="text-lg text-foreground mb-6">
                   Ready to reclaim your time and reduce your job search stress?
                 </p>
-                <a
-                  href="/"
-                  className="inline-flex items-center gap-3 px-12 py-5 bg-foreground text-background rounded-full font-semibold text-lg hover:scale-105 transition-all duration-300 shadow-xl shadow-foreground/20"
-                >
+                <a href="/" className="inline-flex items-center gap-3 px-12 py-5 bg-foreground text-background rounded-full font-semibold text-lg hover:scale-105 transition-all duration-300 shadow-xl shadow-foreground/20">
                   <Sparkles className="w-5 h-5" />
                   Start Creating Your CV
                 </a>
@@ -119,8 +114,6 @@ const About = () => {
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default About;
