@@ -22,7 +22,7 @@ const FileUpload = ({ onFileSelect }: FileUploadProps) => {
   };
 
   return (
-    <div className="w-full">
+    <div className="flex flex-col items-center">
       <input
         type="file"
         ref={fileInputRef}
@@ -32,14 +32,14 @@ const FileUpload = ({ onFileSelect }: FileUploadProps) => {
       />
       <button
         onClick={handleClick}
-        className="w-full sm:w-auto px-8 py-4 bg-primary text-primary-foreground rounded-lg font-medium flex items-center justify-center gap-3 hover:opacity-90 transition-opacity"
+        className="group px-8 py-4 bg-foreground text-background rounded-full font-medium flex items-center justify-center gap-3 hover:scale-105 transition-all duration-300 shadow-lg shadow-foreground/20"
       >
-        <Upload className="w-5 h-5" />
+        <Upload className="w-5 h-5 group-hover:animate-bounce" />
         Upload your CV here
       </button>
       {fileName && (
-        <p className="mt-3 text-sm text-muted-foreground">
-          Selected: {fileName}
+        <p className="mt-4 text-sm text-foreground font-medium bg-foreground/5 px-4 py-2 rounded-full">
+          ✓ {fileName}
         </p>
       )}
     </div>
