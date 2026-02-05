@@ -47,11 +47,9 @@ const Index = () => {
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-foreground mb-8 leading-tight tracking-tight md:whitespace-nowrap">
               Your CV and Cover Letter Creator
             </h1>
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-                Customize your CV and Cover Letter based on your experience and
-                dream job. Upload your CV, paste the job description, and let us
-                craft the perfect application.
-              </p>
+            <p className="text-base md:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto line-clamp-2">
+              Customize your CV and Cover Letter based on your experience and dream job. Upload your CV, paste the job description, and let us craft the perfect application.
+            </p>
             </div>
 
             {/* Form Card */}
