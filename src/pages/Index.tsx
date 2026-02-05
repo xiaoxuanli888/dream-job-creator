@@ -44,10 +44,9 @@ const Index = () => {
 
             {/* Hero Text */}
             <div className="text-center mb-16">
-              <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-foreground mb-8 leading-tight tracking-tight">
-                Your CV and
-                <span className="block mt-2">Cover Letter Creator</span>
-              </h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground mb-8 leading-tight tracking-tight">
+              Your CV and Cover Letter Creator
+            </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
                 Customize your CV and Cover Letter based on your experience and
                 dream job. Upload your CV, paste the job description, and let us
