@@ -94,7 +94,7 @@ const Index = () => {
                     <FileText className="w-4 h-4" />
                     Step 3
                   </div>
-                  <p className="text-lg text-foreground mb-4 font-medium">Paste the job description. Please include the role and the company name.</p>
+                  <p className="text-lg text-foreground mb-4 font-medium">Paste the job description here. Please include the role and the company name.</p>
                   <textarea value={jobDescription} onChange={e => setJobDescription(e.target.value)} placeholder="Copy and paste the full job description here..." className="w-full h-48 p-6 border-2 border-foreground/10 rounded-2xl bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-foreground/30 transition-colors resize-none text-sm leading-relaxed" />
                 </div>
 
